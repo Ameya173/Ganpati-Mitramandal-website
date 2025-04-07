@@ -1,0 +1,337 @@
+.about-page {
+  min-height: 100vh;
+}
+
+.about-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/about-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  color: var(--light-color);
+  text-align: center;
+  padding: 6rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 77, 0, 0.3), rgba(255, 165, 0, 0.3));
+  z-index: 1;
+}
+
+.about-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-image {
+  position: relative;
+}
+
+.about-image::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid var(--accent-color);
+  border-radius: 15px;
+  z-index: -1;
+}
+
+.about-image img {
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.about-image:hover img {
+  transform: scale(1.02);
+}
+
+.about-text h2 {
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  font-size: 2.2rem;
+  position: relative;
+  padding-bottom: 0.8rem;
+  display: inline-block;
+}
+
+.about-text h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background: var(--festive-gradient);
+  border-radius: 1.5px;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.vision-mission {
+  background-color: var(--background-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.vision-mission::before,
+.vision-mission::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-image: url("/images/mandala-pattern.png");
+  background-size: contain;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.vision-mission::before {
+  top: -100px;
+  left: -100px;
+}
+
+.vision-mission::after {
+  bottom: -100px;
+  right: -100px;
+}
+
+.vision-mission-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.vision-box,
+.mission-box {
+  background-color: var(--light-color);
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.vision-box::before,
+.mission-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--festive-gradient);
+}
+
+.vision-box h2,
+.mission-box h2 {
+  color: var(--primary-color);
+  margin-bottom: 1.2rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.committee-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.committee-member {
+  background-color: var(--light-color);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.committee-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(255, 77, 0, 0.2);
+}
+
+.member-image {
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+}
+
+.member-image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.committee-member:hover .member-image img {
+  transform: scale(1.1);
+}
+
+.member-info {
+  padding: 1.8rem;
+  text-align: center;
+  position: relative;
+}
+
+.member-info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1.8rem;
+  right: 1.8rem;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--border-color), transparent);
+}
+
+.member-info h3 {
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  font-size: 1.4rem;
+}
+
+.member-info p {
+  color: var(--accent-color);
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  background-color: rgba(255, 165, 0, 0.1);
+  border-radius: 50px;
+}
+
+.achievements {
+  background-color: var(--light-color);
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  background: var(--festive-gradient);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  background: var(--festive-gradient);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  box-shadow: 0 0 0 4px rgba(255, 77, 0, 0.2);
+}
+
+.timeline-content {
+  position: relative;
+  width: 45%;
+  padding: 1.8rem;
+  background-color: var(--background-color);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  left: 55%;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  left: 0;
+}
+
+.timeline-content h3 {
+  margin-bottom: 0.75rem;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  background-color: rgba(255, 77, 0, 0.1);
+  border-radius: 50px;
+}
+
+@media (max-width: 992px) {
+  .committee-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .vision-mission-content {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline:before {
+    left: 30px;
+  }
+
+  .timeline-dot {
+    left: 30px;
+  }
+
+  .timeline-content {
+    width: calc(100% - 60px);
+    left: 60px !important;
+  }
+
+  .committee-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

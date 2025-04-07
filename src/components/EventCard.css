@@ -1,0 +1,103 @@
+.event-card {
+  background-color: var(--light-color);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
+  position: relative;
+}
+
+.event-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: var(--festive-gradient);
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(255, 77, 0, 0.2);
+}
+
+.event-image {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.event-card:hover .event-image img {
+  transform: scale(1.1);
+}
+
+.event-day {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--festive-gradient);
+  color: var(--light-color);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.event-details {
+  padding: 1.8rem;
+  position: relative;
+}
+
+.event-details::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1.8rem;
+  right: 1.8rem;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--border-color), transparent);
+}
+
+.event-date {
+  color: var(--accent-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background-color: rgba(255, 165, 0, 0.1);
+  border-radius: 50px;
+  font-size: 0.9rem;
+}
+
+.event-title {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+  color: var(--primary-color);
+}
+
+.event-description {
+  color: var(--text-color);
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+.event-time {
+  display: inline-block;
+  background-color: var(--background-color);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: 500;
+  color: var(--text-color);
+  border: 1px dashed var(--border-color);
+}
+
