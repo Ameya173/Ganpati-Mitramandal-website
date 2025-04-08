@@ -12,7 +12,7 @@ const Events = () => {
       title: "Ganesh Sthapana",
       description: "The auspicious installation of Lord Ganesha idol with traditional rituals and prayers.",
       time: "9:00 AM - 12:00 PM",
-      image: "/images/event1.jpg",
+      image: "/images/event1.png",
       details: ["Pran Pratishtha ceremony", "Aarti and bhajans", "Prasad distribution", "Community lunch"],
     },
     {
@@ -21,7 +21,7 @@ const Events = () => {
       title: "Children's Day",
       description: "A day dedicated to children with various fun activities, games, and competitions.",
       time: "4:00 PM - 8:00 PM",
-      image: "/images/event2.jpg",
+      image: "/images/children.png",
       details: ["Drawing competition", "Fancy dress competition", "Story telling session", "Games and prizes"],
     },
     {
@@ -29,8 +29,8 @@ const Events = () => {
       date: "September 21, 2023",
       title: "Seniors' Special",
       description: "A special day for senior citizens with activities tailored for them.",
-      time: "5:00 PM - 8:00 PM",
-      image: "/images/event3.jpg",
+      time: "9:00 AM - 11:30 AM",
+      image: "/images/Senior.png",
       details: ["Bhajan sandhya", "Health check-up camp", "Antakshari competition", "Special dinner"],
     },
     {
@@ -38,7 +38,7 @@ const Events = () => {
       date: "September 22, 2023",
       title: "Mahila Mandal Day",
       description: "A day celebrating women with various competitions and cultural activities.",
-      time: "4:00 PM - 9:00 PM",
+      time: "4:00 PM - 7:00 PM",
       image: "/images/event4.jpg",
       details: ["Rangoli competition", "Cooking competition", "Fashion show", "Cultural performances"],
     },

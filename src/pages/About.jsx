@@ -48,7 +48,7 @@ const About = () => {
         <div className="container">
           <div className="about-content">
             <div className="about-image">
-              <img src="/images/about-image.jpg" alt="Moraj Ganeshotsav Mandal" />
+              <img src="/images/about-image1.jpg" alt="Moraj Ganeshotsav Mandal" />
             </div>
             <div className="about-text">
               <h2>Our Story</h2>

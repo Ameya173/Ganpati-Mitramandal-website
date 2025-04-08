@@ -19,7 +19,7 @@ const Home = () => {
       title: "Ganesh Sthapana",
       description: "The auspicious installation of Lord Ganesha idol with traditional rituals and prayers.",
       time: "9:00 AM - 12:00 PM",
-      image: "/images/event1.jpg",
+      image: "/images/event1.png",
     },
     {
       day: 5,
@@ -27,7 +27,7 @@ const Home = () => {
       title: "Cultural Night",
       description: "An evening filled with music, dance performances and cultural activities by society members.",
       time: "6:00 PM - 10:00 PM",
-      image: "/images/event2.jpg",
+      image: "/images/event2.png",
     },
     {
       day: 10,
@@ -35,7 +35,7 @@ const Home = () => {
       title: "Ganpati Visarjan",
       description: "The grand farewell procession of Lord Ganesha with chanting, music and celebrations.",
       time: "4:00 PM onwards",
-      image: "/images/event3.jpg",
+      image: "/images/event3.png",
     },
   ]
 
@@ -56,7 +56,7 @@ const Home = () => {
           <div className="about-section">
             <div className="about-image" data-aos="fade-right" data-aos-delay="100">
               <div className="about-image-frame">
-                <img src="/images/logo.gp.jpg" alt="Moraj Ganeshotsav Mandal" />
+                <img src="/images/logo1.gp.jpg" alt="Moraj Ganeshotsav Mandal" />
               </div>
               <div className="about-image-decoration"></div>
             </div>
