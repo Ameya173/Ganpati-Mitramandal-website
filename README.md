@@ -25,50 +25,6 @@ This website serves as a digital platform for the Moraj Society's annual Ganesho
 - **Animations**: AOS (Animate On Scroll) library
 - **Deployment**: [Specify your deployment platform]
 
-## 🚀 Installation and Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/moraj-ganeshotsav.git
-
-# Navigate to the project directory
-cd moraj-ganeshotsav
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm run dev
-
-# Build for production
-npm run build
-```
-
-## 📁 Project Structure
-
-```
-moraj-ganeshotsav/
-├── public/
-│   ├── images/           # Static images
-│   └── index.html        # HTML template
-├── src/
-│   ├── components/       # Reusable components
-│   │   ├── Hero.jsx
-│   │   ├── CountdownTimer.jsx
-│   │   ├── EventCard.jsx
-│   │   └── ...
-│   ├── pages/            # Page components
-│   │   ├── Home.jsx
-│   │   ├── About.jsx
-│   │   ├── Events.jsx
-│   │   └── ...
-│   ├── App.jsx           # Main application component
-│   ├── main.jsx          # Application entry point
-│   └── index.css         # Global styles
-├── package.json          # Project dependencies and scripts
-└── README.md             # Project documentation
-```
-
 ## 📝 Usage Guidelines
 
 ### Home Page
@@ -112,8 +68,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 📞 Contact
 
 For any queries or suggestions, please reach out to:
-- **Email**: [your-email@example.com]
-- **Website**: [your-website.com]
+- **Email**: [ameyagirkar1708@gmail.com]
 
 ---
 
